@@ -1,57 +1,56 @@
-
 :root {
-    --banner-bg: #8c8381;
-    --card-bg: #d9d9d9;
-    --font-pixel-title: "Silkscreen", monospace;
-    --font-pixel-sub: "Pixelify Sans", monospace;
-    --font-body: "Inter", sans-serif;
-
-    /* Colores GiftCraft */
     --LightGray: #C4CBCE;
     --DarkBrown: #633E21;
     --Crimson: #C53336;
     --BrightOrange: #FD9B1C;
     --ForestGreen: #315C2B;
+
+    --font-pixel-title: "Silkscreen", monospace;
+    --font-pixel-sub: "Pixelify Sans", monospace;
+    --font-body: "Inter", sans-serif;
 }
 
 body {
     font-family: var(--font-body);
-    background: #fff;
-    color: #000;
+    background-color: #F5F3EF;
+    color: var(--DarkBrown);
 }
 
 .banner {
-    background-color: var(--banner-bg);
-    min-height: 220px;
+    background-color: var(--DarkBrown);
+    min-height: 180px;
+    border-bottom: 5px solid var(--BrightOrange);
 }
 
 .banner h1 {
     font-family: var(--font-pixel-title);
-    color: #fff;
+    color: white;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .info-card {
-    background-color: var(--card-bg);
-    min-height: 305px;
-    padding: 2rem;
+    background-color: var(--LightGray);
+    padding: 25px;
+    border-top: 4px solid var(--ForestGreen);
 }
 
 .info-card h2 {
     font-family: var(--font-pixel-sub);
-    font-size: 1.35rem;
+    color: var(--ForestGreen);
+    font-size: 1.4rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .info-card p {
-    font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .card {
+    height: 100%;
     background-color: var(--LightGray);
     color: var(--DarkBrown);
+    border: 1px solid var(--DarkBrown);
 }
 
 .card-img-top {
@@ -59,19 +58,38 @@ body {
     object-fit: cover;
 }
 
+.card-body {
+    background-color: var(--LightGray);
+}
+
 .card-title {
     font-family: var(--font-pixel-sub);
+    color: var(--Crimson);
     font-size: 1rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .card a {
     color: var(--ForestGreen);
     text-decoration: none;
+    margin-right: 10px;
+}
+
+.card a:hover {
+    color: var(--Crimson);
+    text-decoration: underline;
 }
 
 @media (max-width: 767.98px) {
     .info-card {
-        padding: 1.5rem;
-        min-height: auto;
+        padding: 18px;
+    }
+
+    .banner {
+        min-height: 150px;
     }
 }
