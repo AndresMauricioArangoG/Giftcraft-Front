@@ -1,0 +1,58 @@
+:root {
+    --banner-bg: #8c8381;
+    --card-bg: #d9d9d9;
+    --font-pixel-title: "Silkscreen", monospace;
+    --font-pixel-sub: "Pixelify Sans", monospace;
+    --font-body: "Inter", sans-serif;
+}
+
+
+body {
+    font-family: var(--font-body);
+    color: #000;
+    background: #fff;
+}
+
+/* Banner superior */
+.banner {
+    background-color: var(--banner-bg);
+    min-height: 220px;
+}
+
+.banner h1 {
+    font-family: var(--font-pixel-title);
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: 0;
+}
+
+/* Tarjetas */
+.info-card {
+    background-color: var(--card-bg);
+    min-height: 305px;
+    padding: 2.25rem 4.25rem;
+}
+
+.info-card h2 {
+    font-family: var(--font-pixel-sub);
+    font-weight: 500;
+    font-size: 1.35rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.info-card p {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    .info-card {
+        padding: 2rem 1.75rem;
+        min-height: auto;
+    }
+}
