@@ -23,6 +23,12 @@
             --font-pixel-title: "Silkscreen", monospace;
             --font-pixel-sub: "Pixelify Sans", monospace;
             --font-body: "Inter", sans-serif;
+            /* color palete Giftcraft */
+            --LightGray: #C4CBCE;
+            --DarkBrown: #633E21;
+            --Crimson: #C53336;
+            --BrightOrange: #FD9B1C;
+            --ForestGreen: #315C2B;
         }
 
         body {
@@ -66,10 +72,14 @@
             font-size: 1.05rem;
             line-height: 1.25;
             margin: 0;
+            padding-top: 24px;
+
         }
 
-        .equipo_presentacion {
-          margin-top: 60px;   
+        .card {
+            background-color: var(--LightGray);
+            color: var(--DarkBrown);
+
         }
 
         @media (max-width: 767.98px) {
@@ -95,44 +105,114 @@
             <div class="col-12 col-md-6">
                 <article class="info-card h-100">
                     <h2>Nuestra historia</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                    <p align="justify">
+                        Giftcraft nacio de la idea de craftear tus regalos a la relidad, personalizandolos con
+                        diferentes colores y tamaños <i>"Por que los mejores regalos tambien se hacen".</i>
                     </p>
                 </article>
             </div>
-
             <div class="col-12 col-md-6">
                 <article class="info-card h-100">
                     <h2>Lo que hacemos</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                    <p align="justify">
+                        Con el fin de dotar a GiftCraft, un negocio local de Barranquilla, de una presencia
+                        comercial en internet eficiente, se diseñará un sistema de comercio electrónico.
                     </p>
                 </article>
             </div>
         </section>
-
-        <section class="equipo_presentacion">
-            <div class="card" style="width: 18rem;">
+    </main>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Andres Arango </h5>
+                    <p class="card-text">Desarrollador full stack | PHP | JavaScript | Laravel | Power Apps|</p>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://github.com/AndresMauricioArangoG" class="card-text"><small
+                            class="text-body-secondary">Github</small></a>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://www.linkedin.com/in/andres-mauricio-arango-grisales-desarrollador-fullstack/"
+                        class="card-text"><small class="text-body-secondary">Linkedin</small></a>
+
                 </div>
             </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Leidy Gonzalez</h5>
+                    <p class="card-text">Desarrollador Java Full Stack | Microservicios | Infraestructura en la nube |
+                        Ingeniería de software | Transformación digital</p>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://github.com/Gleidy725" class="card-text"><small
+                            class="text-body-secondary">Github</small></a>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://www.linkedin.com/in/leidygonzalezsoftwareengineering" class="card-text"><small
+                            class="text-body-secondary">Linkedin</small></a>
 
-        </section>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Natalia Villalobos</h5>
+                    <p class="card-text">Ingeniera de Sistemas y Computación | Desarrolladora Fullstack Java | Spring
+                        Boot | JavaScript | PHP | Flutter | MySQL | Git | GitHub|</p>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://github.com/natalia482" class="card-text"><small
+                            class="text-body-secondary">Github</small></a>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://www.linkedin.com/in/briyit-natalia-villalobos-rodriguez-ingeniera-de-sistemas"
+                        class="card-text"><small class="text-body-secondary">Linkedin</small></a>
 
-    </main>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mauro Infante</h5>
+                    <p class="card-text">Ingeniero industrial bilingüe | Desarrollador full stack junior | Java - Spring
+                        Boot | Analista de datos | Estudiante de ciberseguridad |</p>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://github.com/Maurux01" class="card-text"><small
+                            class="text-body-secondary">Github</small></a>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://www.linkedin.com/in/maurofelipe-infante/" class="card-text"><small
+                            class="text-body-secondary">Linkedin</small></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Alexandra Del valle</h5>
+                    <p class="card-text">Desarrolladora Junior Full-Stack | JavaScript | Java | Desarrollo Web.</p> 
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://github.com/alexandradelvalle" class="card-text"><small
+                            class="text-body-secondary">Github</small></a>
+                    <a class="link" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                        href="https://www.linkedin.com/in/alexandra-vanessa-del-valle-aragon-desarrolladora-fullstack"
+                        class="card-text"><small class="text-body-secondary">Linkedin</small></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- personal JS -->
     <script src="/JS/script.js"></script>
-
 </body>
 
 </html>
