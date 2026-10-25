@@ -24,7 +24,7 @@ body{
 
 /*Hero con la imagen de nuebes en movimiento*/
 .hero-banner {
-  background-image: url('/ASSETS/gift/gift-banner-about.gif'); 
+  background-image: url('../ASSETS/gift/gift-banner-about.gif'); 
   background-size: cover;   /*Cubre el 100% de la imagen*/
   background-position: center bottom;
   background-repeat: no-repeat;
