@@ -1,157 +1,51 @@
-
 :root {
-    --LightGray: #C4CBCE;
-    --DarkBrown: #633E21;
-    --Crimson: #C53336;
-    --BrightOrange: #FD9B1C;
-    --ForestGreen: #315C2B;
+    /*Paleta de colores*/
+    --MoradoCreativo: #8B5CF6;
+    --VerdeMundo: #A8B89A;
+    --MarronTierra: #8B6955;
+    --RosaAventura: #D98FA3;
+    --CremaCrafteo: #FFF7E8;
 
+    /*Fuentes*/
+    --font-pixel-style:"Press Start 2P", system-ui;
     --font-pixel-title: "Silkscreen", monospace;
     --font-pixel-sub: "Pixelify Sans", monospace;
     --font-body: "Inter", sans-serif;
 }
 
 body {
-    font-family: var(--font-body);
-    background-color: #a88b52;
-    color: var(--DarkBrown);
-    background-image: url(/ASSETS/Dirt_background_JE1.webp);
+    background-image: url(/ASSETS/gift/gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
 }
 
-/* Contenedor principal centrado */
-.contenido-principal {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* Banner */
-.banner {
-    background-color: var(--DarkBrown);
-    min-height: 180px;
-    border-bottom: 5px solid var(--BrightOrange);
-}
-
-.banner h1 {
-    font-family: var(--font-pixel-title);
-    color: white;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-}
-
-/* Tarjetas de información */
-.info-card {
-    background-color: var(--LightGray);
-    padding: 25px;
-    border-top: 4px solid var(--ForestGreen);
-}
-
-.info-card h2 {
-    font-family: var(--font-pixel-sub);
-    color: var(--ForestGreen);
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.info-card p {
-    line-height: 1.6;
-}
-
-/* Equipo */
-.equipo {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.titulo-equipo {
-    font-family: var(--font-pixel-sub);
-    color: var(--ForestGreen);
-}
-
-/* Tarjetas de integrantes */
-.card {
-    height: 100%;
-    background-color: var(--LightGray);
-    color: var(--DarkBrown);
-}
-
-.card-img-top {
-    height: 150px;
-    object-fit: cover;
-}
-
-.card-body {
-    background-color: var(--LightGray);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/*Este boton se quita cuando se ponga el nav*/
+.btn-about {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100x;
     height: 100%;
 }
 
-.card-title {
-    font-family: var(--font-pixel-sub);
-    color: var(--Crimson);
-    font-size: 1rem;
+.button-about {
+    background-color:var(--VerdeMundo);
+    font-family: var(--font-pixel-style);
+    border-color: var( --CremaCrafteo);
+    color: var( --CremaCrafteo);
 }
 
-.card-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: auto;
+.button-about:hover {
+    font-family: var(--font-pixel-style);
+    background-color: var( --MarronTierra);
+    border-color: var(--MarronTierra);
+    color: var(--CremaCrafteo);
 }
 
-.card-actions {
-    display: flex;
-    gap: 8px;
-    margin-top: auto;
-}
 
-.card a.link {
-    display: inline-block;
-    padding-top: 10px;
-    margin-top: 8px;
-    margin-right: 10px;
-    padding: 6px 14px;
-    border: 1px solid var(--DarkBrown);
-    border-radius: 4px;
-    background-color: var(--LightGray);
-    color: var(--ForestGreen);
-    text-decoration: none;
-    font-size: 0.85rem;
-}
 
-.card a.link:hover {
-    color: var(--Crimson);
-    text-decoration: underline;
-    background-color: #e0d8cc;
-}
 
-.pixel-border {
-    border: 8px solid transparent;
-    border-image-source: repeating-linear-gradient(
-        45deg,
-        var(--DarkBrown) 0%, var(--DarkBrown) 12.5%,
-        #4a2e15 12.5%, #4a2e15 25%,
-        #2e1c0c 25%, #2e1c0c 37.5%,
-        #5c3d25 37.5%, #5c3d25 50%,
-        #3d2814 50%, #3d2814 62.5%,
-        #6d4f32 62.5%, #6d4f32 75%,
-        #2e1c0c 75%, #2e1c0c 87.5%,
-        #4a2e15 87.5%, #4a2e15 100%
-    );
-    border-image-slice: 8;
-    border-image-width: 8px;
-    border-image-repeat: repeat;
-    background-clip: padding-box;
-}
-
-/* Ajustes para celulares */
-@media (max-width: 767.98px) {
-    .info-card {
-        padding: 18px;
-    }
-
-    .banner {
-        min-height: 150px;
-    }
-}
