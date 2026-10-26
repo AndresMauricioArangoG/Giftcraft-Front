@@ -80,10 +80,12 @@ body{
   background-color: #8B5CF6;
   border-radius: 12px;
   box-shadow: 0 3px 0 #6d38d3;
+  font-family: var(--font-pixel-title);
 }
 
 .banner-verde-faq {
   background-color: #83A854;
+  font-family: var(--font-pixel-title);
   border-radius: 12px;
   box-shadow: 0 3px 0 #5c7b37;
 }
@@ -92,6 +94,11 @@ body{
 .form-floating{
   background-color: #1877F2;
 }
+
+label, input, select, textarea{
+  font-family: var(--font-pixel-sub);
+}
+
 .custom-input {
   background-color: #F8F1E5 !important;
   border: 2px solid #E6D9C5 !important;
@@ -107,6 +114,7 @@ body{
 /* Botón Verde Enviar */
 .btn-verde-minecraft {
   background-color: #83A854 !important;
+  font-family: var(--font-pixel-title);
   border: 2px solid #5c7b37 !important;
   box-shadow: 0 5px 0 #425b25 !important;
   font-size: 1.1rem;
@@ -148,14 +156,26 @@ body{
 /* Acordeón Personalizado */
 .custom-accordion .accordion-button {
   background-color: #F8F1E5 !important;
+  font-family: var(--font-pixel-sub);
   color: #444 !important;
   border: 2px solid #E6D9C5 !important;
   box-shadow: none !important;
+
 }
 
 .custom-accordion .accordion-button:not(.collapsed) {
-  background-color: #EFE4D2 !important;
+  background-color: var(--VerdeMundo) !important;
   color: #000 !important;
+}
+
+.accordion-header {
+   background-color: var(--CremaCrafteo);
+}
+.accordion-body{
+  background-color: var(--CremaCrafteo);
+  font-family: var(--font-pixel-sub);
+  gap: 10px;
+
 }
 
 .pixel-art {
