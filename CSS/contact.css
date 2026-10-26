@@ -1,0 +1,184 @@
+/*Separo el css del principal par que no afecte los estilos y poder trabajar mas comodos (preguntar a profes si es corecto)*/
+*{
+
+}
+:root {
+    /*Paleta de colores*/
+    --MoradoCreativo: #8B5CF6;
+    --VerdeMundo: #A8B89A;
+    --MarronTierra: #8B6955;
+    --RosaAventura: #D98FA3;
+    --CremaCrafteo: #FFF7E8;
+
+    /*Fuentes*/
+    --font-pixel-style:"Press Start 2P", system-ui;;
+    --font-pixel-title: "Silkscreen", monospace;
+    --font-pixel-sub: "Pixelify Sans", monospace;
+    --font-body: "Inter", sans-serif;
+}
+
+body{
+    background-color:var(--CremaCrafteo) ;
+}
+
+/*Hero con la imagen de nuebes en movimiento*/
+.hero-banner {
+  background-image: url('../ASSETS/gift/gift-banner-about.gif'); 
+  background-size: cover;   /*Cubre el 100% de la imagen*/
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100%; /* Asegura el 100% de ancho */
+  min-height: 450px;
+  border-radius: 0 0 10px 10px;
+ 
+  
+}
+
+/* Cartel de Madera */
+.banner-madera {
+  background-color: var(--MarronTierra, #8B6955); 
+  font-family: var(--font-pixel-title);
+  border: 4px solid #5a3e2b;
+  box-shadow: 0 8px 0 #3d291c, inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-madera h1 {
+  text-shadow: 3px 3px 0px #1c3d2e;
+  letter-spacing: 2px;
+}
+
+/* Etiqueta Crema Sobrepuesta */
+.banner-subtitle {
+  background-color: var(--CremaCrafteo, #FFF7E8); 
+  font-family: var(--font-pixel-sub);
+  border: 3px solid #e2d2b8;
+  position: relative;
+  top: -20px; /* Desplaza la etiqueta hacia arriba para solapar el cartel */
+}
+
+
+/* Formulario- */
+.card-crema {
+  background-color:var(--CremaCrafteo); /* Tu crema base */
+  border: 2px solid #e4e2df !important;
+}
+
+.card-morada {
+  background-color: #EDE4F0 !important; /* Lila claro de la imagen */
+  border: 2px solid #E1D3E8 !important;
+}
+
+/* Insignias de Título */
+.banner-madera {
+  background-color: #8B6955;
+  border: 3px solid #5a3e2b;
+  border-radius: 12px;
+  box-shadow: 0 4px 0 #3d291c;
+}
+
+.banner-morado {
+  background-color: #8B5CF6;
+  border-radius: 12px;
+  box-shadow: 0 3px 0 #6d38d3;
+  font-family: var(--font-pixel-title);
+}
+
+.banner-verde-faq {
+  background-color: #83A854;
+  font-family: var(--font-pixel-title);
+  border-radius: 12px;
+  box-shadow: 0 3px 0 #5c7b37;
+}
+
+/* Campos de Formulario */
+.form-floating{
+  background-color: #1877F2;
+}
+
+label, input, select, textarea{
+  font-family: var(--font-pixel-sub);
+}
+
+.custom-input {
+  background-color: #F8F1E5 !important;
+  border: 2px solid #E6D9C5 !important;
+  border-radius: 12px !important;
+  color: #555 !important;
+}
+
+.custom-input:focus {
+  border-color: #83A854 !important;
+  box-shadow: none !important;
+}
+
+/* Botón Verde Enviar */
+.btn-verde-minecraft {
+  background-color: #83A854 !important;
+  font-family: var(--font-pixel-title);
+  border: 2px solid #5c7b37 !important;
+  box-shadow: 0 5px 0 #425b25 !important;
+  font-size: 1.1rem;
+}
+
+.btn-verde-minecraft:hover {
+  background-color: #729645 !important;
+}
+
+.badge-sobre {
+  background-color: #83A854;
+  color: #333;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+
+/* Botones de Redes Sociales */
+.btn-social {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+}
+
+.btn-facebook { background-color: #1877F2; }
+.btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.btn-tiktok { background-color: #000000; }
+.btn-youtube { background-color: #FF0000; }
+
+/* Acordeón Personalizado */
+.custom-accordion .accordion-button {
+  background-color: #F8F1E5 !important;
+  font-family: var(--font-pixel-sub);
+  color: #444 !important;
+  border: 2px solid #E6D9C5 !important;
+  box-shadow: none !important;
+
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: var(--VerdeMundo) !important;
+  color: #000 !important;
+}
+
+.accordion-header {
+   background-color: var(--CremaCrafteo);
+}
+.accordion-body{
+  background-color: var(--CremaCrafteo);
+  font-family: var(--font-pixel-sub);
+  gap: 10px;
+
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+}
+
