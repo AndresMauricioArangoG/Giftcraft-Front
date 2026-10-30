@@ -32,6 +32,7 @@ function cargarComponente(id, archivo) {
                 contenedor.innerHTML = data;
                 if (id === 'header-placeholder') {
                     ajustarRutasHeader(contenedor);
+                    marcarActivoHeader(contenedor);
                 }
             }
         })
@@ -48,6 +49,17 @@ function ajustarRutasHeader(contenedor) {
     contenedor.querySelectorAll('img[src^="/"]').forEach(img => {
         const src = img.getAttribute('src');
         img.setAttribute('src', prefix + src.replace(/^\/+/, ''));
+    });
+}
+
+function marcarActivoHeader(contenedor) {
+    const current = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    contenedor.querySelectorAll('.gc-menu .nav-link').forEach(link => {
+        link.classList.remove('active');
+        const linkFile = (new URL(link.href, window.location.href).pathname.split('/').pop() || 'index.html').toLowerCase();
+        if (linkFile === current || (current === '' && linkFile === 'index.html')) {
+            link.classList.add('active');
+        }
     });
 }
 

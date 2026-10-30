@@ -6,6 +6,13 @@
     padding: 0.75rem 1.25rem;
 }
 
+/* El placeholder es el contenedor sticky (más alto que el nav) */
+#header-placeholder {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
 /* Logo y marca */
 .gc-brand {
     display: flex;
