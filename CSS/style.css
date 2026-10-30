@@ -22,7 +22,6 @@ body {
     height: 80%; /* Altura fija elegante para pantallas grandes */
     object-fit: cover; /* Evita que la imagen se deforme */
     object-position: center;
-    
 }
 
 .carousel-caption-responsive {
