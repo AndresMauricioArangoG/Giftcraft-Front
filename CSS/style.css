@@ -52,6 +52,62 @@ body {
     font-family: var(--font-pixel-style);
 }
 
+.card-valor {
+    height: 100%;
+    text-align: center;
+    border: 3px solid #3b2a1a;
+    border-radius: 15px;
+    background-color: #ffe4ef; /* mismo tono para todas las cards */
+    box-shadow: 5px 5px 0 #3b2a1a;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-valor {
+    height: 100%;
+    text-align: center;
+    border: 3px solid var(--MarronTierra);
+    border-radius: 15px;
+    background-color: var(--CremaCrafteo);
+    box-shadow: 5px 5px 0 var(--MarronTierra);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-valor:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 14px 0 var(--RosaAventura);
+}
+
+.card-valor .card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px auto 0;
+    image-rendering: pixelated;
+    transition: transform 0.3s;
+}
+
+.card-valor:hover .card-img-top {
+    transform: scale(1.2) rotate(8deg);
+}
+
+/* Títulos */
+.card-valor .card-title {
+    font-family: var(--font-pixel-sub);
+    font-weight: 700;
+    color: var(--MoradoCreativo);
+    transition: color 0.3s;
+}
+
+.card-valor:hover .card-title {
+    color: var(--RosaAventura);
+}
+
+.card-valor .card-text {
+    font-family: var(--font-pixel-sub);
+    font-weight: 400;
+    color: var(--MarronTierra);
+}
+
 /* --- DISEÑO RESPONSIVO (TABLETS Y CELULARES < 768px) --- */
 @media (max-width: 768px) {
     .carousel-item img {
