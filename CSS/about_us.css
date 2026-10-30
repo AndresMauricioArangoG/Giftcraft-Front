@@ -180,3 +180,10 @@ body{
   opacity: 0.85;
   color: #fff;
 }
+
+/* Responsive: mostrar la abeja en móvil */
+@media (max-width: 768px) {
+  .hero-banner {
+    background-position: right bottom;
+  }
+}
