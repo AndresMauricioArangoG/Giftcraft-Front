@@ -79,8 +79,7 @@ function cargarEstiloHeader() {
     if (!document.getElementById(id)) {
         const link = document.createElement('link');
         link.id = id;
-        link.rel = 'stylesheet';
-        link.href = getBasePath() + 'CSS/components/header.css';
+        link.rel = 'stylesheet';        link.href = getBasePath() + 'CSS/components/header.css';
         document.head.appendChild(link);
     }
 
