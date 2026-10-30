@@ -7,7 +7,7 @@
     --CremaCrafteo: #FFF7E8;
 
     /*Fuentes*/
-    --font-pixel-style:"Press Start 2P", system-ui;
+    --font-pixel-style: "Press Start 2P", system-ui;
     --font-pixel-title: "Silkscreen", monospace;
     --font-pixel-sub: "Pixelify Sans", monospace;
     --font-body: "Inter", sans-serif;
@@ -17,29 +17,65 @@ body {
     margin: 0;
 }
 
-/*Este boton se quita cuando se ponga el nav*/
-.btn-about {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    width: 100x;
-    height: 100%;
+/* --- CARRUSEL (ESCRITORIO) --- */
+.carousel-item img {
+    height: 80%; /* Altura fija elegante para pantallas grandes */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    object-position: center;
+    
 }
 
-.button-about {
-    background-color:var(--VerdeMundo);
+.carousel-caption-responsive {
+    width: 45% !important; /* Ancho controlado para que no ocupe toda la pantalla */
+    left: 15% !important;   /* Alineado hacia la izquierda con un margen seguro */
+    top: 30% !important;   /* Posición superior ideal */
+    text-align: left !important;
+}
+
+.carousel-caption-responsive h1 {
+    color: #050505; /* Un tono oscuro sólido para asegurar máxima legibilidad */
+    font-family: var(--font-pixel-style, sans-serif);
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+.carousel-caption-responsive p {
+    font-family: var(--font-pixel-sub, sans-serif);
+    color: #1b1b1b;
+}
+
+.carousel-caption-responsive .btn {
     font-family: var(--font-pixel-style);
-    border-color: var( --CremaCrafteo);
-    color: var( --CremaCrafteo);
 }
 
-.button-about:hover {
+.carousel-caption-responsive .btn i {
     font-family: var(--font-pixel-style);
-    background-color: var( --MarronTierra);
-    border-color: var(--MarronTierra);
-    color: var(--CremaCrafteo);
 }
 
+/* --- DISEÑO RESPONSIVO (TABLETS Y CELULARES < 768px) --- */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 420px; /* Reducimos la altura en móviles para mejor proporción */
+    }
 
+    .carousel-caption-responsive {
+        width: 85% !important; /* Permitimos que abarque más espacio horizontal en pantallas chicas */
+        left: 7% !important;   /* Centrado equilibrado */
+        top: 18% !important;   /* Subimos ligeramente para que el botón no tape el fondo inferior */
+    }
 
+    /* Reducimos tamaños de tipografía para evitar desbordamientos */
+    .carousel-caption-responsive h1 {
+        font-size: 1.5rem !important;
+    }
 
+    .carousel-caption-responsive p {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Opcional: Hacer el botón un poco más compacto en celulares */
+    .carousel-caption-responsive .btn {
+        padding: 0.4rem 1.2rem !important;
+        font-size: 0.9rem;
+    }
+}
