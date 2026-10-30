@@ -42,3 +42,4 @@ $form.addEventListener('submit', async (event) => {
     $mensajeRespuesta.textContent = 'Ocurrió un error de conexión. Verifica tu red e inténtalo más tarde.';
   }
 });
+
