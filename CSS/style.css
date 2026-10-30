@@ -80,7 +80,7 @@ body {
 .card-valor .card-img-top {
     width: 100px;
     height: 100px;
-    object-fit: contain;
+    object-fit: cover;
     margin: 20px auto 0;
     image-rendering: pixelated;
     transition: transform 0.3s;
@@ -88,6 +88,20 @@ body {
 
 .card-valor:hover .card-img-top {
     transform: scale(1.2) rotate(8deg);
+}
+
+/* Corazón "hecho a mano" un poco más grande */
+.card-valor .card-img-top.gc-heart {
+    width: 130px;
+    height: 130px;
+}
+
+/* Mapa de Colombia (imagen detallada) */
+.card-valor .card-img-top.gc-map {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    image-rendering: auto;
 }
 
 /* Títulos */
