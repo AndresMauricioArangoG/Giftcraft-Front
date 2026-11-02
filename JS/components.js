@@ -34,12 +34,28 @@ function cargarComponente(id, archivo) {
                     ajustarRutasHeader(contenedor);
                     marcarActivoHeader(contenedor);
                 }
+                if (id === 'footer-placeholder') {
+                    ajustarRutasFooter(contenedor);
+                }
             }
         })
         .catch(error => console.error('Error cargando componente:', error));
 }
 
 function ajustarRutasHeader(contenedor) {
+    const enHtml = /\/HTML\//i.test(window.location.pathname || '');
+    const prefix = enHtml ? '../' : '';
+    contenedor.querySelectorAll('a[href^="/"]').forEach(a => {
+        const href = a.getAttribute('href');
+        a.setAttribute('href', prefix + href.replace(/^\/+/, ''));
+    });
+    contenedor.querySelectorAll('img[src^="/"]').forEach(img => {
+        const src = img.getAttribute('src');
+        img.setAttribute('src', prefix + src.replace(/^\/+/, ''));
+    });
+}
+
+function ajustarRutasFooter(contenedor) {
     const enHtml = /\/HTML\//i.test(window.location.pathname || '');
     const prefix = enHtml ? '../' : '';
     contenedor.querySelectorAll('a[href^="/"]').forEach(a => {
