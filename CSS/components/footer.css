@@ -1,0 +1,60 @@
+/* Footer GiftCraft - estilo acorde al header (colores) */
+.footer {
+    background-color: #f5f0e6; /* crema/beige muy claro (igual que el header) */
+    border-top: 1px solid #e6ddcc;
+    font-family: 'Pixelify Sans', 'Inter', sans-serif;
+    color: #1a1a1a;
+}
+
+/* Logo */
+.footer .gc-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+/* Marca / título */
+.footer h2,
+.footer .gc-brand-text {
+    font-family: 'Press Start 2P', 'Pixelify Sans', monospace;
+    color: #5a3e2b; /* marrón oscuro */
+    letter-spacing: 1px;
+}
+
+/* Frase de marca: usa el magenta/rosa del header como acento */
+.footer .text-warning {
+    color: #d63384 !important;
+}
+
+/* Textos secundarios en marrón suave */
+.footer .text-secondary,
+.footer small,
+.footer p {
+    color: #5a3e2b !important;
+}
+
+/* Botones de redes sociales: estilo similar a los iconos del header */
+.footer .btn-outline-secondary {
+    color: #5a3e2b;
+    border-color: #d6c9b6;
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer .btn-outline-secondary:hover,
+.footer .btn-outline-secondary:focus {
+    background-color: #f0e6d6;
+    color: #d63384;
+    border-color: #d63384;
+}
+
+/* Separador superior del aviso legal */
+.footer .border-top {
+    border-color: #e6ddcc !important;
+}
+
+/* Iconos dentro de los botones */
+.footer .btn i {
+    color: inherit;
+}
